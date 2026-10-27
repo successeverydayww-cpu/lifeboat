@@ -1,0 +1,22 @@
+name = "airconnect-api"
+main = "worker.ts"
+compatibility_date = "2024-09-18"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "airconnect-db"
+database_id = "e34c1d56-46f3-46a1-83cf-c95794d15d62"
+
+[[services]]
+binding = "BRIDGE_SVC"
+service = "mesh-bridge"
+
+[ai]
+binding = "AI"
+
+[[services]]
+binding = "HANDS_SVC"
+service = "skylar-hands"
+
+[triggers]
+crons = ["* * * * *"]
